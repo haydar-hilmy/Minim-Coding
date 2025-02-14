@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  body {
+    margin: 0;
+    background-color: #021221;
+  }
+
+  .wrapper {
+
+    /* KODE INI OPSIONAL, KARENA UNTUK MEMPOSISIKAN GAMBAR DI TENGAH LAYAR */
+    position: absolute;
+    top: 25%;
+
+    display: -webkit-box;
+    flex-direction: row;
+    padding: 24px 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .wrapper .stack-area {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: max-content;
+    padding-left: 20px;
+    overflow-x: hidden;
+    animation: slideInfinite 6s linear infinite;
+  }
+
+  .wrapper .stack-area img {
+    width: 300px;
+    border-radius: 12px;
+  }
+
+  @keyframes slideInfinite {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+
+<body>
+
+  <div class="wrapper">
+    <div class="stack-area">
+      <img src="images/image1.jpg" alt="image1">
+      <img src="images/image2.jpg" alt="image2">
+      <img src="images/image3.jpg" alt="image3">
+      <img src="images/image4.jpg" alt="image4">
+      <img src="images/image5.jpg" alt="image5">
+      <img src="images/image6.jpg" alt="image6">
+    </div>
+    <div class="stack-area">
+      <img src="images/image1.jpg" alt="image1">
+      <img src="images/image2.jpg" alt="image2">
+      <img src="images/image3.jpg" alt="image3">
+      <img src="images/image4.jpg" alt="image4">
+      <img src="images/image5.jpg" alt="image5">
+      <img src="images/image6.jpg" alt="image6">
+    </div>
+  </div>
+
+</body>
+
+</html>
